@@ -13,4 +13,28 @@ Performing EDA on 2 Spotify playlist, one with the like songs, other with the di
 Spotify **Application Programming interface** provides set of tools and procedures for developers to access data and functionality from Spotify music streaming platform. Using this API, we can extract details about playlists and tracks. But for that one need to have an authorization by Spotify and get a token which lasts for fixed amount of time and past that, new token needs to be generated for request and response to be approved. 
 
 
+### Data Collection
+
+
 For our case, we made two playlist, one containing the tracks we (all team members) like to listen to and one playlist containing tracks that wont meet our taste. Following that, Tom took the authorization token, extracted the playlist id’s and got the file json file containing the track ID and track name, through simple text processing, we extracted all the track id’s and received meticulous file on track details containing 10+ characteristics of each track. 
+
+
+### Data Preparation
+
+
+At this point, all the data we received is in .Json format, our first step was to convert it to .CSV format for comfortable manipulation. The code used to perform the conversion is provided in the json_to_csv.ipynb file in this repository. During this process, we also shifted the ‘id’ from middle to the left most column as that’s the standard format followed everywhere. 
+
+
+Right now, all the tracks are divided into two files, one for like tracks and the dislike track in other, in order to perform the EDA, we need all the data in one dataframe and we also don’t want any information leak, so we added new column to both the files as ‘good’ and the dataframe containing the liked songs, we placed ‘1’ for all the rows and ‘0’ in the other dataframe and then concatenated both the dataframe into one, now we can segregate each song whether its liked one or not just by referring the feature ‘good’
+
+
+After manipulating the dataframe, we removed the features that don’t posses any impact on the analysis such as ‘type’, ‘uri’, ‘track_href’, and ‘analysis_url’. 
+
+
+### Data Cleaning 
+
+
+As the data is directly obtained from Spotify, it’s a first-party data, which means the probability of it bring noisy are minute, but still to be sure, we did performed data cleaning. Noticeable observations were obtained during outlier detection through box plots. A lot of datapoints where outside the minimum (q1 - 1.5 * IQR) and maximum(q3 + 1.5 * IQR) range. Initially the thoughts where that these datapoints are noise but after thorough consideration it revealed that these points are the songs that are highly dedicated to that particular characteristic, for example, a lot of datapoints are lying under the minimum threshold in the ‘energy’ plot, so these datapoints are the songs that are just white noise or calm/sleep songs, obviously because of the nature of the song they will be really low on energy. Same way we can see few points above the maximum threshold in ‘Speechiness’ plot, these are the hardcore rap songs, again because of their nature, there will be a lot of lyrics. 
+
+
+Few more similar scenarios can be seen in different characteristic plots but the reason for all is same, so it doesn’t make sense to remove these points as they are not noise, they are just songs highly dedicated to a particular characteristic. 

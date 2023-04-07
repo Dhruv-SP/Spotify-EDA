@@ -1,4 +1,7 @@
-# Spotify-EDA ![Spotify logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ASpotify_logo_without_text.svg&psig=AOvVaw2SO8k_2gqDr9Ajzc0c9uWO&ust=1680920568577000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCG9Jzblv4CFQAAAAAdAAAAABAE)
+# Spotify-EDA 
+<picture>
+  <srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1024px-Spotify_logo_without_text.svg.png">
+</picture>
 Performing EDA on 2 Spotify playlist, one with the like songs, other with the dislike songs, in order to gain more experience with EDA
 
 ### EDA!!

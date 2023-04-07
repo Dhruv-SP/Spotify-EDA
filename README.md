@@ -68,14 +68,31 @@ The insights can be easily explained as
 
 
 >Duration less than 300000ms,
+
+
 >Acousticness less than 0.9,
+
+
 >Energy greater than 0.3,
+
+
 >Loudness greater than -15,
+
+
 >Danceability greater than 0.4,
+
+
 >Valence between 0.1 and 0.9,
+
+
 >Tempo between 65 – 90 and between 120 – 160,
+
+
 >instrumentalness is almost near 0,
+
+
 >time signature is not 1 beat per bar.
+
 
 Note: the features that are not present in this list do not have clear distribution so that we can put a threshold for like and dislike. 
 

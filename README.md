@@ -20,6 +20,10 @@ Spotify **Application Programming interface** provides set of tools and procedur
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+
 ### Data Collection
 
 

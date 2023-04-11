@@ -14,7 +14,7 @@ Performing EDA on 2 Spotify playlist, one with the like songs, other with the di
 
 ### Spotify API
 
-<img src="images/Spotify API.png" align="left" width="480" height="300">
+<img src="images/Spotify API.png" align="left" width="480" height="180">
 Spotify **Application Programming interface** provides set of tools and procedures for developers to access data and functionality from Spotify music streaming platform. Using this API, we can extract details about playlists and tracks. But for that one need to have an authorization by Spotify and get a token which lasts for fixed amount of time and past that, new token needs to be generated for request and response to be approved. 
 
 <br>

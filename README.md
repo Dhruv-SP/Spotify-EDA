@@ -28,9 +28,17 @@ Spotify **Application Programming interface** provides set of tools and procedur
 
 ### Data Collection
 
-
+<img src="images/Json file.png" align="right" width="300" height="480">
 For our case, we made two playlist, one containing the tracks we (all team members) like to listen to and one playlist containing tracks that wont meet our taste. Following that, Tom took the authorization token, extracted the playlist id’s and got the file json file containing the track ID and track name, through simple text processing, we extracted all the track id’s and received meticulous file on track details containing 10+ characteristics of each track. 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br/>
 
 ### Data Preparation
 

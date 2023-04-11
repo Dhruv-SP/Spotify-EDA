@@ -79,13 +79,15 @@ Few more similar scenarios can be seen in different characteristic plots but the
 
 And here we begin our long-awaited task, the ***EDA***.
 
-<img src="images/heatmap_reduced.png" align="right" width="300" height="300">
+<img src="images/heatmap_reduced.png" align="right" width="500" height="500">
 
 We started off with the Heatmap to understand the correlation of each feature respect to ‘Liking’. Straight away we can see that characteristic such as ‘Danceability’, ‘Loudness’, ‘Speechiness’, ‘instrumentalness’, and ‘Duration’ have the highest corelation, but we can’t stop here, all these characteristics can impact liking as their values change, i.e., if the danceability is too low then its not liked, if its high then the track is liked, we need to find these thresholds for each of these characteristics.
 
 
 For that, first we need to select a set od characteristics that has the high correlation to liking as analysing all the characteristics will be exhausting and its not impactful to figure out threshold for characteristics that don’t possess much importance for the listener. We selected all the features that had correlation at least one tenth to the number, either positive or negative. Those features will be 'instrumentalness', 'duration_ms', 'acousticness', 'energy', 'time_signature', 'valence', 'tempo', 'loudness', 'danceability', and 'Speechiness'. After selecting the characteristics, we plotted each characteristic against all the other characteristics and a lot of insights where explored. 
 
+<br>
+<br>
 
 Starting with the duration of the song, it appears that the tracks with duration less than 300000 ms are liked if the acousticness is less than 0.9, energy grater than 0.3, loudness greater than -15 and danceability greater than 0.4. 
 

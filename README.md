@@ -62,7 +62,7 @@ Few more similar scenarios can be seen in different characteristic plots but the
 
 <img src="images/energy_box.png" align="left" width="300" height="200">
 <img src="images/live_box.png" align="left" width="300" height="200">
-<img src="images/speech_box.png" align="right" width="300" height="200">
+<img src="images/speech_box.png" align="left" width="300" height="200">
 <br>
 <br>
 <br>
@@ -77,7 +77,7 @@ Few more similar scenarios can be seen in different characteristic plots but the
 ### The Good Stuff
 
 
-And here we begin our long-awaited task, the *** EDA ***.
+And here we begin our long-awaited task, the ***EDA***.
 
 
 We started off with the Heatmap to understand the correlation of each feature respect to ‘Liking’. Straight away we can see that characteristic such as ‘Danceability’, ‘Loudness’, ‘Speechiness’, ‘instrumentalness’, and ‘Duration’ have the highest corelation, but we can’t stop here, all these characteristics can impact liking as their values change, i.e., if the danceability is too low then its not liked, if its high then the track is liked, we need to find these thresholds for each of these characteristics.

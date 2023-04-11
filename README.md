@@ -60,8 +60,12 @@ As the data is directly obtained from Spotify, it’s a first-party data, which 
 
 Few more similar scenarios can be seen in different characteristic plots but the reason for all is same, so it doesn’t make sense to remove these points as they are not noise, they are just songs highly dedicated to a particular characteristic. 
 
-<img src="images/energy_box.png" align="left" width="300" height="300">
-<img src="images/speech_box.png" align="right" width="300" height="300">
+<img src="images/energy_box.png" align="left" width="270" height="150">
+<img src="images/speech_box.png" align="right" width="270" height="150">
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>

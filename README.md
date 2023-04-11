@@ -62,7 +62,7 @@ Few more similar scenarios can be seen in different characteristic plots but the
 
 <img src="images/energy_box.png" align="left" width="300" height="200">
 <img src="images/live_box.png" align="middle" width="300" height="200">
-<img src="images/speech_box.png" align="right" width="300" height="200">
+<img src="images/speech_box.png" width="300" height="200">
 <br>
 <br>
 <br>
